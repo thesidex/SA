@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:hsql://localhost:9003/trainingdb
+    username: SA
+    password: ""
+    driver-class-name: org.hsqldb.jdbcDriver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.HSQLDialect
+
+logging:
+  level:
+    root: ERROR
+    org:
+      springframework: ERROR
